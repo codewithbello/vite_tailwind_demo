@@ -1,0 +1,30 @@
+export const students = [
+  {
+    id: 1,
+    name: "Alice",
+    email: "alice@example.com",
+    course: "Web Fundamentals",
+  },
+  {
+    id: 2,
+    name: "Bob",
+    email: "bob@example.com",
+    course: "Advanced JavaScript",
+  },
+  {
+    id: 3,
+    name: "Charlie",
+    email: "charlie@example.com",
+    course: "React Deep Dive",
+  },
+];
+
+export function addStudent(student) {
+  // In a real app, this would be an API call.
+  // For this mock DB, we just push to the array.
+  // This won't persist across page reloads without localStorage or a server.
+  const newId =
+    students.length > 0 ? Math.max(...students.map((s) => s.id)) + 1 : 1;
+  students.push({ id: newId, ...student });
+  console.log("Student added:", students);
+}
