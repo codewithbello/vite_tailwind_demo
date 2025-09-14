@@ -1,0 +1,1 @@
+import"./style-Bp3DqqqO.js";import{g as a,a as i}from"./db-CKQjmJgf.js";const e=document.querySelector("#registration-form");e.addEventListener("submit",n=>{n.preventDefault();const s=new FormData(e),o=Object.fromEntries(s.entries()),t=a(),r={id:t.length>0?Math.max(...t.map(d=>d.id))+1:1,...o};i(r),alert("Student registered successfully!"),window.location.href="/"});
