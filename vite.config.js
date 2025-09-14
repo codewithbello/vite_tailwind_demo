@@ -4,7 +4,7 @@ import { resolve } from "path";
 
 export default defineConfig({
   // Replace 'your-repo-name' with the name of your GitHub repository
-  base: "/your-repo-name/",
+  base: "/vite_tailwind_demo/",
   plugins: [tailwindcss()],
   build: {
     rollupOptions: {
